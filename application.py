@@ -6,15 +6,11 @@ from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 application = Flask(__name__)
 app = application
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html') 
+    results = None  # Default value if no prediction yet
 
-@app.route('/predictdata', methods=['GET', 'POST'])
-def predict_datapoint():
-    if request.method == 'GET':
-        return render_template('home.html')
-    else:
+    if request.method == 'POST':
         # Match keys to CSV columns
         data = CustomData(
             gender=request.form.get('gender'),
@@ -34,8 +30,10 @@ def predict_datapoint():
         print("Mid Prediction")
         results = predict_pipeline.predict(pred_df)
         print("After Prediction")
+        results = results[0]  # Get scalar from array
 
-        return render_template('home.html', results=results[0])
+    # Render the same index.html page with or without results
+    return render_template('index.html', results=results)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
