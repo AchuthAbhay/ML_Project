@@ -56,6 +56,7 @@ The application is deployed on **AWS Elastic Beanstalk**:
 
 
 
+
 ---
 
 ## Installation
@@ -87,7 +88,7 @@ pip install -r requirements.txt
 Run the Flask application:
 
 ```bash
-python app.py
+python application.py
 ```
 
 Open your browser and go to:
