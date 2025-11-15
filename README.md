@@ -53,26 +53,7 @@ The application is deployed on **AWS Elastic Beanstalk**:
 
 ---
 
-## Project Structure
 
-```
-StudentExamPerformance/
-│
-├── artifacts/              # Saved models and preprocessors
-│   └── model.pkl
-├── src/
-│   ├── pipeline/           # ML pipeline
-│   │   ├── predict_pipeline.py
-│   │   └── train_pipeline.py
-│   ├── exception.py
-│   ├── logger.py
-│   └── utils.py
-├── templates/              # HTML templates
-│   ├── index.html
-│   └── home.html
-├── app.py                  # Flask app
-├── requirements.txt
-└── README.md
 ```
 
 ---
@@ -82,8 +63,8 @@ StudentExamPerformance/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/StudentExamPerformance.git
-cd StudentExamPerformance
+git clone https://github.com/<your-username>/ML_Project.git
+cd ML_Project
 ```
 
 2. Create a virtual environment:
@@ -106,7 +87,7 @@ pip install -r requirements.txt
 Run the Flask application:
 
 ```bash
-python app.py
+python application.py
 ```
 
 Open your browser and go to:
@@ -153,8 +134,8 @@ The trained model is saved as `artifacts/model.pkl`.
 
 ## Author
 
-- **Your Name**  
-- [Your GitHub](https://github.com/<your-username>)
+- **Achuth Abhay**  
+- [Your GitHub](https://github.com/<AchuthAbhay>)
 
 ---
 
