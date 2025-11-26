@@ -20,9 +20,9 @@ A web-based application to predict a student's **Math score** based on their dem
 
 ## Demo
 
-The application is deployed on **AWS Elastic Beanstalk**:
+The application is deployed on **Render**:
 
-[Student Performance Indicator Web App](http://StudentPerfromanceIndicator-env.eba-dnkmv3qm.ap-southeast-2.elasticbeanstalk.com)
+[Student Performance Indicator Web App](https://studentexamperformancepredictionsystem.onrender.com/)
 
 ---
 
@@ -48,7 +48,7 @@ The application is deployed on **AWS Elastic Beanstalk**:
 - **Backend:** Python, Flask
 - **Machine Learning:** Scikit-learn, XGBoost, CatBoost
 - **Frontend:** HTML, CSS
-- **Deployment:** AWS Elastic Beanstalk
+- **Deployment:** Render
 
 ---
 
@@ -118,9 +118,7 @@ The trained model is saved as `artifacts/model.pkl`.
 
 ## Deployment
 
-- Deployed using AWS Elastic Beanstalk.
-- Environment: Python 3.13 running on 64-bit Amazon Linux.
-- Accessible via the Elastic Beanstalk domain (see Demo section).
+- Deployed using Render.
 
 ---
 
